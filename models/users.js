@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//Contacts mongoose schema for queries
 const userSchema = new mongoose.Schema({
     _id: mongoose.SchemaTypes.ObjectId,
     firstName: String,

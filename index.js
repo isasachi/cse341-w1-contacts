@@ -5,8 +5,10 @@ const dbConnect = require('./database/connection');
 const router = require('./routes/index');
 const URI = process.env.URI;
 
+// Connect to the database server
 dbConnect(URI);
 
+// Main router
 app.use('/', router);
 
 app.listen(process.env.PORT, () => {
