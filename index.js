@@ -4,13 +4,10 @@ require('dotenv').config();
 const dbConnect = require('./database/connection');
 const router = require('./routes/index');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 const URI = process.env.URI;
 
 // Connect to the database server
 dbConnect(URI);
-
-app.use(cors());
 
 // Boody parser, this makes the req body readable
 app.use(bodyParser.json());
