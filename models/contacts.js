@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 
 //Contacts mongoose schema for queries
-const userSchema = new mongoose.Schema({
-    _id: mongoose.SchemaTypes.ObjectId,
+const contactSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
     email: String,
@@ -10,4 +9,4 @@ const userSchema = new mongoose.Schema({
     birthday: Date
 });
 
-module.exports = mongoose.model('Contacts', userSchema);
+module.exports = mongoose.model('Contacts', contactSchema);
